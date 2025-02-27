@@ -15,6 +15,11 @@ application {
     mainClass.set("org.example.MainKt")  // Replace with your actual main class path
 }
 
+tasks.withType<Jar> {
+    manifest {
+        attributes["Main-Class"] = "org.example.MainKt"  // Ensure this matches your main function
+    }
+}
 
 
 group = "org.example"
