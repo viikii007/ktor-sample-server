@@ -11,6 +11,12 @@ plugins {
 }
 
 
+application {
+    mainClass.set("org.example.MainKt")  // Replace with your actual main class path
+}
+
+
+
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
